@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <v-app>
     <v-app-bar
+      app
       color="amber lighten-1"
       dark
+      fixed
       elevate-on-scroll
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -26,7 +28,7 @@
     </v-app-bar>
 
     <!-- Search -->
-    
+    <v-main>
         <v-container>
           <v-expand-transition>
             <v-text-field
@@ -76,7 +78,8 @@
     <div style="height:1000px;"></div>
 
     <app-footer />
-  </div>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
