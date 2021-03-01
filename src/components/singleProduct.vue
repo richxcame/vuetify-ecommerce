@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-3">
     <v-row>
       <v-col
         cols="12"

@@ -143,7 +143,7 @@
     </v-navigation-drawer>
 
 <!-- Carousel -->
-    <v-container>    
+    <v-container style=" padding: 0 !important">    
       <v-carousel 
         v-model="model" 
         height="400"
