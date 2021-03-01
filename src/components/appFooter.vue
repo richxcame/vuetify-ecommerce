@@ -49,7 +49,7 @@
   *{
     font-family: Lato;
   }
-  @media all and (min-width: 750px){
+  @media all and (min-width: 960px){
     #hide{
       display: none;
     }

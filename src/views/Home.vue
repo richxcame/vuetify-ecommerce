@@ -147,10 +147,6 @@
       <v-carousel 
         v-model="model" 
         height="400"
-        cycle
-        continuous
-        interval="4000"
-        progress
       >
         <v-carousel-item
           v-for="(color, index) in colors"
@@ -176,7 +172,10 @@
         </v-carousel-item>
         </v-carousel>
       </v-container>
-    <single-product />
+    <single-p />
+    <single-p />
+    <single-p />
+    <single-p />
 
     
     <div style="height:1000px;"></div>
@@ -189,11 +188,13 @@
 <script>
 import appFooter from '../components/appFooter.vue'
 import singleProduct from '../components/singleProduct.vue'
+import singleP from '../components/singleP.vue'
 
   export default{
     components:{
       appFooter,
       singleProduct,
+      singleP,
     },
     data(){
       return{
@@ -247,7 +248,7 @@ import singleProduct from '../components/singleProduct.vue'
 </script>
 
 <style>
-  @media all and (max-width: 750px){
+  @media all and (max-width: 960px){
     .smHide{
       display:none;
     }

@@ -8,7 +8,8 @@
         class="d-flex justify-space-around"        
       >
       <v-hover v-slot="{ hover }" open-delay="100" close-delay="100">
-          <v-card :elevation="hover ? 10 : 2"
+          <v-card 
+            :elevation="hover ? 10 : 2"
             class="mx-2 mb-2 "
             :class="{ 'on-hover' : hover }"
             color="grey lighten-4"
