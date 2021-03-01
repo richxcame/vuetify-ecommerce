@@ -19,7 +19,7 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
-
+      <!-- Categories -->
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -32,12 +32,13 @@
           Categories
           </v-btn>
       </template>
-        
-        <v-list>
-          <v-list-item v-for="(item, index) in categories" :key="index" @click="onClick(item.route)">
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
+        <v-expand-transition>
+          <v-list>
+            <v-list-item v-for="(item, index) in categories" :key="index" @click="onClick(item.route)">
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-expand-transition>
       </v-menu>
 
       <v-btn 
@@ -141,7 +142,43 @@
       </v-list>      
     </v-navigation-drawer>
 
+<!-- Carousel -->
+    <v-container>    
+      <v-carousel 
+        v-model="model" 
+        height="400"
+        cycle
+        continuous
+        interval="4000"
+        progress
+      >
+        <v-carousel-item
+          v-for="(color, index) in colors"
+          :key="index"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        >
+          <v-sheet 
+            :color="color" 
+            tile
+            height="100%"
+          >
+            <v-row
+              class="fill-height"
+              align="center"
+              justify="center"
+            >
+              <div class="display-3">
+                Slide {{ index + 1 }}
+              </div>              
+            </v-row>            
+          </v-sheet>
+        </v-carousel-item>
+        </v-carousel>
+      </v-container>
     <single-product />
+
+    
     <div style="height:1000px;"></div>
 
     <app-footer />
@@ -186,12 +223,21 @@ import singleProduct from '../components/singleProduct.vue'
           {title: 'Shoes', route: '/shoes'},
           {title: 'Jeans', route: 'jeans'},
           {title: 'Watches', route: '/watches'}
-        ]
+        ],
+        colors: [
+          'primary',
+          'secondary',
+          'yellow darken-2',
+          'red',
+          'orange',
+        ],
+        model: 0,
       }
     },
     methods:{
       toggleSearch(){
-        this.isClicked = !this.isClicked; 
+        this.isClicked = !this.isClicked;
+        window.scrollTo(0, 0); 
       },
       onClick(query){
         this.$router.push(query);
