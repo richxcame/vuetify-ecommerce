@@ -142,11 +142,16 @@
       </v-list>      
     </v-navigation-drawer>
 
+    <new-product />
+    <new-product />
+    <new-product />
+    <new-product />
+
     <single-p />
     <single-p />
     <single-p />
     <single-p />
-    
+
 <!-- Carousel -->
     <v-container style=" padding: 0 !important">    
       <v-carousel 
@@ -190,12 +195,14 @@
 import appFooter from '../components/appFooter.vue'
 import singleProduct from '../components/singleProduct.vue'
 import singleP from '../components/singleP.vue'
+import newProduct from '../components/newProduct.vue'
 
   export default{
     components:{
       appFooter,
       singleProduct,
       singleP,
+      newProduct,
     },
     data(){
       return{
