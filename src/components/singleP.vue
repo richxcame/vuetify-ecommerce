@@ -6,6 +6,7 @@
 				class="card"
 				color="grey lighten-5"
 			>
+			<v-btn absolute style="z-index:2001;" icon class="ma-1"><v-icon color="error">mdi-heart-outline</v-icon></v-btn>
 				<v-img src="../assets/photo1.jpg" height="230">
 				<v-expand-transition>
                 <div
@@ -33,16 +34,8 @@
 						<v-icon>mdi-cart-plus</v-icon>			
 					</v-btn>
 					<del>490</del><span style="font-size:20px; color:#B71C1C; margin-left:10px;">$349</span>
-					<v-btn
-						icon
-						class="float-right"
-					>
-						<v-icon>mdi-bookmark-outline</v-icon>
-					</v-btn>
 				</v-card-text>
 				</div>
-						
-					
 			</v-card>
 		</v-hover>
 	</div>
@@ -76,7 +69,21 @@
 		}
 	}	
 
-	@media all and (max-width:960px){
+	@media all and (max-width:650px){
+		.card{
+			width: 49%;
+			height: 330px;
+			margin: .5%;
+			float:left;
+		}
+	}
 
+	@media all and (min-width: 650px) and (max-width: 960px){
+		.card{
+			width: 32%;
+			height: 330px;
+			margin: .6%;
+			float:left;
+		}
 	}
 </style>

@@ -142,6 +142,11 @@
       </v-list>      
     </v-navigation-drawer>
 
+    <single-p />
+    <single-p />
+    <single-p />
+    <single-p />
+    
 <!-- Carousel -->
     <v-container style=" padding: 0 !important">    
       <v-carousel 
@@ -172,10 +177,6 @@
         </v-carousel-item>
         </v-carousel>
       </v-container>
-    <single-p />
-    <single-p />
-    <single-p />
-    <single-p />
 
     
     <div style="height:1000px;"></div>
