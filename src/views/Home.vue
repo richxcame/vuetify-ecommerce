@@ -114,6 +114,7 @@
 
     <!-- Navigation drawer -->
     <v-navigation-drawer
+      style="z-index: 9999;"
       v-model="drawer"
       temporary
       fixed
