@@ -5,10 +5,10 @@
         cols="12"
         sm="6"
         md="4"
-        class="d-flex justify-space-around"        
+        class="d-flex justify-space-around"
       >
       <v-hover v-slot="{ hover }" open-delay="100" close-delay="100">
-          <v-card 
+          <v-card
             :elevation="hover ? 10 : 2"
             class="mx-2 mb-2 "
             :class="{ 'on-hover' : hover }"
@@ -28,7 +28,7 @@
                   $99<sup><small>.99</small></sup>
                 </div>
               </v-expand-transition>
-            </v-img>  
+            </v-img>
             <v-card-text
               class="pt-6"
               style="position: relative;"
@@ -50,15 +50,15 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor...
               </div>
-            </v-card-text>               
-          </v-card>          
+            </v-card-text>
+          </v-card>
         </v-hover>
         </v-col>
         <v-col
         cols="12"
         sm="6"
         md="4"
-        class="d-flex justify-space-around"       
+        class="d-flex justify-space-around"
       >
       <v-hover v-slot="{ hover }" open-delay="100" close-delay="100">
           <v-card :elevation="hover ? 10 : 2"
@@ -80,7 +80,7 @@
                   $99<sup><small>.99</small></sup>
                 </div>
               </v-expand-transition>
-            </v-img>  
+            </v-img>
             <v-card-text
               class="pt-6"
               style="position: relative;"
@@ -102,15 +102,15 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor...
               </div>
-            </v-card-text>               
-          </v-card>          
+            </v-card-text>
+          </v-card>
         </v-hover>
         </v-col>
         <v-col
         cols="12"
         sm="6"
         md="4"
-        class="d-flex justify-space-around"       
+        class="d-flex justify-space-around"
       >
       <v-hover v-slot="{ hover }" open-delay="100" close-delay="100">
           <v-card :elevation="hover ? 10 : 2"
@@ -132,7 +132,7 @@
                   $99<sup><small>.99</small></sup>
                 </div>
               </v-expand-transition>
-            </v-img>  
+            </v-img>
             <v-card-text
               class="pt-6"
               style="position: relative;"
@@ -154,11 +154,11 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor...
               </div>
-            </v-card-text>               
-          </v-card>          
+            </v-card-text>
+          </v-card>
         </v-hover>
         </v-col>
-    </v-row>        
+    </v-row>
   </div>
 </template>
 

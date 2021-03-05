@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<v-hover v-slot="{ hover }">
-			<v-card 
-				:elevation="hover ? 10 : 2" 
+			<v-card
+				:elevation="hover ? 10 : 2"
 				class="card"
 				color="grey lighten-5"
 			>
@@ -19,19 +19,19 @@
               </v-expand-transition>
         </v-img>
 				<div style="position:relative;">
-				<v-card-title class=" font-weight-light orange--text">Lorem ipsum dolor</v-card-title>
+				<v-card-title class=" font-weight-light orange--text">Lorem</v-card-title>
 				<v-card-text>
 					<v-btn
 						absolute
-						fab 
+						fab
 						color="orange"
 						class="white--text"
 						right
 						top
 						dark
 						elevation="0"
-					>	
-						<v-icon>mdi-cart-plus</v-icon>			
+					>
+						<v-icon>mdi-cart-plus</v-icon>
 					</v-btn>
 					<del>490</del><span style="font-size:20px; color:#B71C1C; margin-left:10px;">$349</span>
 				</v-card-text>
@@ -57,7 +57,7 @@
 		font-family: Lato;
 	}
 
-	@media all and (min-width: 960px){	
+	@media all and (min-width: 960px){
 		.card{
 			width: 24%;
 			height: 330px;
@@ -67,7 +67,7 @@
 		.move{
 			margin-left:15%;
 		}
-	}	
+	}
 
 	@media all and (max-width:650px){
 		.card{
