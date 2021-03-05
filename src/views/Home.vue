@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-app-bar
+      style="z-index: 2002;"
       app
       color="amber lighten-1"
       dark
@@ -11,7 +12,7 @@
       <v-toolbar-title>xCame</v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <v-btn 
+      <v-btn
         icon
         class="mx-2"
         @click="toggleSearch"
@@ -41,17 +42,17 @@
         </v-expand-transition>
       </v-menu>
 
-      <v-btn 
-        color="transparent" 
-        elevation="0" 
+      <v-btn
+        color="transparent"
+        elevation="0"
         class="mr-2 smHide"
       >
         About us
       </v-btn>
 
-      <v-btn 
-        color="transparent" 
-        elevation="0" 
+      <v-btn
+        color="transparent"
+        elevation="0"
         class="mr-2 smHide"
       >
         Contact us
@@ -67,7 +68,7 @@
           offset-y="22"
           class="smHide"
         >
-          <v-btn 
+          <v-btn
           icon
           class="mr-2 smHide"
           >
@@ -80,18 +81,18 @@
       <!-- Login icon -->
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn 
+          <v-btn
           icon
           class="mr-2"
           v-on="on"
           v-bind="attrs"
           >
             <v-icon>mdi-login</v-icon>
-          </v-btn>          
+          </v-btn>
         </template>
         <span>Login</span>
       </v-tooltip>
-      
+
     </v-app-bar>
 
 
@@ -109,8 +110,8 @@
             ></v-text-field>
           </v-expand-transition>
         </v-container>
-      
-    
+
+
 
     <!-- Navigation drawer -->
     <v-navigation-drawer
@@ -134,13 +135,13 @@
               <v-icon :color="item.color">{{ item.icon }}</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>  
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
 
-        </v-list-item-group>        
-      </v-list>      
+        </v-list-item-group>
+      </v-list>
     </v-navigation-drawer>
 
     <new-product />
@@ -154,9 +155,9 @@
     <single-p />
 
 <!-- Carousel -->
-    <v-container style=" padding: 0 !important">    
-      <v-carousel 
-        v-model="model" 
+    <v-container style=" padding: 0 !important">
+      <v-carousel
+        v-model="model"
         height="400"
       >
         <v-carousel-item
@@ -165,8 +166,8 @@
           reverse-transition="fade-transition"
           transition="fade-transition"
         >
-          <v-sheet 
-            :color="color" 
+          <v-sheet
+            :color="color"
             tile
             height="100%"
           >
@@ -177,14 +178,14 @@
             >
               <div class="display-3">
                 Slide {{ index + 1 }}
-              </div>              
-            </v-row>            
+              </div>
+            </v-row>
           </v-sheet>
         </v-carousel-item>
         </v-carousel>
       </v-container>
 
-    
+
     <div style="height:1000px;"></div>
 
     <app-footer />
@@ -216,7 +217,7 @@ import newProduct from '../components/newProduct.vue'
           { title: 'Profile', icon: 'mdi-account', color: 'deep-purple' },
           { title: 'Delete', icon: 'mdi-delete', color: 'grey'  },
           { title: 'Phone', icon: 'mdi-phone', color: 'success'  },
-          { title: 'Github', icon: 'mdi-github', color: 'black'  },          
+          { title: 'Github', icon: 'mdi-github', color: 'black'  },
           { title: 'Gitlab', icon: 'mdi-gitlab', color: 'yellow darken-1'  },
           { title: 'Google', icon: 'mdi-google', color: 'indigo'  },
           { title: 'Facebook', icon: 'mdi-facebook', color: 'indigo'  },
@@ -247,7 +248,7 @@ import newProduct from '../components/newProduct.vue'
     methods:{
       toggleSearch(){
         this.isClicked = !this.isClicked;
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
       },
       onClick(query){
         this.$router.push(query);
