@@ -6,6 +6,7 @@
     :background-color="color"
     shift
     dark
+    style="z-index: 2022"
   >
     <v-btn 
       icon
